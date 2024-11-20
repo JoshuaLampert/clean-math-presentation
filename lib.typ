@@ -242,11 +242,11 @@
 
 /// Title slide for the presentation. You should update the information in the `config-info` function. You can also pass the information directly to the `title-slide` function.
 ///
-/// - `logo1` is the first logo of the slide. Default is `image("images/dfg_logo.svg", height: 2.5em)`.
+/// - `logo1` is the first logo of the slide. Can be an image. Default is `none`.
 ///
-/// - `logo2` is the second logo of the slide. Default is `image("images/titlegraphic.svg", height: 2.5em)`.
+/// - `logo2` is the second logo of the slide. Can be an image. Default is `none`.
 ///
-/// - `background` is the background image of the slide. Default is `image("images/background.svg")`.
+/// - `background` is the background image of the slide. Can be an image. Default is `none`.
 ///
 /// Example:
 ///
