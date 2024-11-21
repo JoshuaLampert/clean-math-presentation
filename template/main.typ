@@ -1,5 +1,5 @@
 #import "@preview/touying:0.5.3": *
-#import "../lib.typ": *
+#import "@preview/clean-math-presentation:0.1.0": *
 
 #show: clean-math-presentation-theme.with(
   config-info(
@@ -73,7 +73,7 @@
   $
     integral_0^oo exp(-x^2) dif x = pi/2
   $<eq:important>
-  We can then refer to this equations as @eq:important.
+  We can then refer to this equation as @eq:important.
   Equations without a label will not be numbered:
   $
     sum_(n=1)^oo 1/n^2 = pi^2/6
