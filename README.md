@@ -11,7 +11,7 @@ proofs.
 
 ## Usage
 
-The template is already filled with dummy data, to give users an impression how it looks like. The paper is obtained by compiling `main.typ`.
+The template is already filled with dummy data, to give users an impression how it looks like. The presentation is obtained by compiling `main.typ`.
 
 - after [installing Typst](https://github.com/typst/typst?tab=readme-ov-file#installation) you can conveniently use the following to create a new folder containing this project.
 
@@ -28,7 +28,7 @@ typst init @preview/clean-math-presentation:0.1.0
 - `short-title`: Short version of the presentation to be shown in the footer, optional.
   If not short title is provided, the `title` will be shown in the footer.
 - `date`: Date of the presentation.
-- `authors`: List of names of the authors of the paper. Each entry of the list is a dictionary with the following keys:
+- `authors`: List of names of the authors of the presentation. Each entry of the list is a dictionary with the following keys:
   - `name`: Name of the author.
   - `affiliation-id`: The ID of the affiliation in `affiliations`, see below.
 - `affiliations`: List of affiliations of the authors. Each entry of the list is a dictionary with the following keys:
