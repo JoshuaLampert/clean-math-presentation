@@ -239,6 +239,23 @@
   touying-slide(self: self, config: config, repeat: repeat, setting: new-setting, composer: composer, ..bodies)
 })
 
+// To also handle content (e.g. something like $dagger$) as affiliation-id,
+// cf. https://github.com/typst/typst/issues/2196#issuecomment-1728135476
+#let to-string(content) = {
+  if type(content) in (int, float, decimal, version, bytes, label, type, str) {
+    str(content)
+  } else {
+    if content.has("text") {
+      content.text
+    } else if content.has("children") {
+      content.children.map(to-string).join("")
+    } else if content.has("body") {
+      to-string(content.body)
+    } else if content == [ ] {
+      " "
+    }
+  }
+}
 
 /// Title slide for the presentation. You should update the information in the `config-info` function. You can also pass the information directly to the `title-slide` function.
 ///
@@ -307,7 +324,7 @@
     )
     // authors
     info.authors.map(author => if "affiliation-id" in author {
-      text(author.name + super(str(author.affiliation-id)))
+      text(author.name + super(to-string(author.affiliation-id)))
     } else {
       author.name
     }).join(", ")
@@ -316,7 +333,7 @@
     if info.affiliations != none {
       parbreak()
       for affiliation in info.affiliations {
-        text(size: 0.8em, super(str(affiliation.id)) + affiliation.name)
+        text(size: 0.8em, super(to-string(affiliation.id)) + affiliation.name)
         linebreak()
       }
     }
