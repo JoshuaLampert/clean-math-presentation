@@ -279,7 +279,11 @@
       (authors,)
     }
     authors.map(author => if author.name == info.author {
-      (name: underline(author.name), affiliation-id: author.affiliation-id)
+      if "affiliation-id" in author {
+        (name: underline(author.name), affiliation-id: author.affiliation-id)
+      } else {
+        (name: underline(author.name),)
+      }
     } else {
       author
     })
@@ -302,8 +306,10 @@
       },
     )
     // authors
-    info.authors.map(author => {
-      text(size: 1.0em, author.name + super(str(author.affiliation-id)))
+    info.authors.map(author => if "affiliation-id" in author {
+      text(author.name + super(str(author.affiliation-id)))
+    } else {
+      author.name
     }).join(", ")
 
     // institutions
@@ -550,6 +556,9 @@
       header-ascent: 0em,
       footer-descent: 0em,
       margin: (top: 3.5em, bottom: 1.0em, x: 2.5em),
+    ),
+    config-info(
+      affiliations: none,
     ),
     config-common(
       slide-fn: slide,
