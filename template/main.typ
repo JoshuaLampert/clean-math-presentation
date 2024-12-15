@@ -59,6 +59,7 @@
   #proof[
     This was very easy, wasn't it?
   ]
+  #pause
   A definition already given by well-known mathematicians @Author1978definition is:
   #definition(title: "Important stuff")[
     _Important stuff_ is defined as the stuff that is important to me:
