@@ -19,7 +19,7 @@ The template is already filled with dummy data, to give users an impression how 
 typst init @preview/clean-math-presentation:0.1.0
 ```
 
-- edit the data in `main.typ` → `#show template.with([your data])`
+- edit the data in `main.typ` → `#show clean-math-presentation.with([your data])`
 
 ### Parameters of the Template
 
@@ -40,7 +40,7 @@ typst init @preview/clean-math-presentation:0.1.0
 Other arguments like `align`, `progess-bar` and more
 are available and similar to other templates in touying, especially the
 [stargazer theme](https://touying-typ.github.io/docs/themes/stargazer).
-The colorscheme can be adjusted by passing `config-colors` to the `template`, e.g.
+The colorscheme can be adjusted by passing `config-colors` to the template, e.g.
 ```typ
 config-colors(
   primary: rgb("#6068d6"),
