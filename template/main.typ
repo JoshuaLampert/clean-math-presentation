@@ -1,4 +1,4 @@
-#import "@preview/touying:0.5.3": *
+#import "@preview/touying:0.5.4": *
 #import "../lib.typ": *
 
 #show: clean-math-presentation-theme.with(

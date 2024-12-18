@@ -4,7 +4,7 @@
 // https://github.com/QuadnucYard/touying-theme-seu and
 // https://github.com/typst/packages/blob/main/packages/preview/touying/0.5.3/themes/stargazer.typ
 
-#import "@preview/touying:0.5.3": *
+#import "@preview/touying:0.5.4": *
 #import "@preview/great-theorems:0.1.1": *
 
 // Custom colors
