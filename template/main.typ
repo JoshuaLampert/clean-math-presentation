@@ -1,5 +1,5 @@
 #import "@preview/touying:0.5.5": *
-#import "../lib.typ": *
+#import "@preview/clean-math-presentation:0.1.1": *
 
 #show: clean-math-presentation-theme.with(
   config-info(
@@ -36,7 +36,7 @@
 
 #slide(title: "Using the template")[
   To use this template,
-  - import it at the beginning of your presentation like this: `#import "@preview/clean-math-presentation:0.1.0": *`
+  - import it at the beginning of your presentation like this: `#import "@preview/clean-math-presentation:0.1.1": *`
   - import touying by `#import "@preview/touying:0.5.5": *`
   - call the `#show: clean-math-presentation-theme.with()` function to set the title, authors, and other information of your presentation.
 
