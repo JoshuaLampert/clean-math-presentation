@@ -265,6 +265,8 @@
 ///
 /// - `background` is the background image of the slide. Can be an image. Default is `none`.
 ///
+/// - `margin` is the margin of the slide. Default is `(top: 1.0em, bottom: 0.0em)`.
+///
 /// Example:
 ///
 /// ```typst
@@ -280,6 +282,7 @@
   logo1: none,
   logo2: none,
   background: none,
+  margin: (top: 1.0em, bottom: 0.0em),
   ..args) = touying-slide-wrapper(self => {
   set page(background: background)
   self.store.title = none
@@ -355,7 +358,7 @@
     config-page(
       header: none,
       footer: none,
-      margin: (top: 1.0em, bottom: 0.0em),
+      margin: margin,
     ),
   )
 

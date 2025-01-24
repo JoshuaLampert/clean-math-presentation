@@ -1,5 +1,5 @@
 #import "@preview/touying:0.5.5": *
-#import "@preview/clean-math-presentation:0.1.1": *
+#import "../lib.typ": *
 
 #show: clean-math-presentation-theme.with(
   config-info(
