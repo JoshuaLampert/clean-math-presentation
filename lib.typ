@@ -4,8 +4,8 @@
 // https://github.com/QuadnucYard/touying-theme-seu and
 // https://github.com/typst/packages/blob/main/packages/preview/touying/0.5.3/themes/stargazer.typ
 
-#import "@preview/touying:0.5.5": *
-#import "@preview/great-theorems:0.1.1": *
+#import "@preview/touying:0.6.1": *
+#import "@preview/great-theorems:0.1.2": *
 
 // Custom colors
 #let primary-color = rgb("#005bac")

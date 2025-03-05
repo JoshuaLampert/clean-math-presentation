@@ -1,4 +1,4 @@
-#import "@preview/touying:0.5.5": *
+#import "@preview/touying:0.6.1": *
 #import "../lib.typ": *
 
 #show: clean-math-presentation-theme.with(
@@ -37,7 +37,7 @@
 #slide(title: "Using the template")[
   To use this template,
   - import it at the beginning of your presentation like this: `#import "@preview/clean-math-presentation:0.1.1": *`
-  - import touying by `#import "@preview/touying:0.5.5": *`
+  - import touying by `#import "@preview/touying:0.6.1": *`
   - call the `#show: clean-math-presentation-theme.with()` function to set the title, authors, and other information of your presentation.
 
   The title slide can be created with the `#title-slide()` command. You can pass a `background` (an image or `none`) and up to two logos `logo1` and `logo2`. \
