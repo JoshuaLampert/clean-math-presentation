@@ -70,7 +70,7 @@
 ]
 
 #slide(title: "Equations")[
-  Equations with a label with a label will be numbered automatically:
+  Equations with a label will be numbered automatically:
   $
     integral_0^oo exp(-x^2) dif x = pi/2
   $<eq:important>

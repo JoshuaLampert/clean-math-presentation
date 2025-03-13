@@ -51,7 +51,7 @@ The title page can be created with `#title-slide`. It accepts optionally a `back
 and up to two logos `logo1` and `logo2` (`none` by default). The margin can be set with the argument `margin`.
 
 The theme provides different types of slides like `#outline-slide`, `#focus-slide`, `#ending-slide`, and the usual `#slide`.
-Additionally,it already provides support for theorems and alike by the functions `#theorem`, `#lemma`,
+Additionally, it already provides support for theorems and alike by the functions `#theorem`, `#lemma`,
 `#corollary`, `#definition`, `#example`, and `#proof`.
 
 ## Acknowledgements
